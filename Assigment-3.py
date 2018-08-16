@@ -45,7 +45,13 @@ stack.append("Prashansa")
 print("Updated stack is: ",stack)
 print("Popped value: ",stack.pop())
 print("Updated stack is: ",stack)
-#queue ??
+#queue
+queue=[1,2,3]
+print("Queue is: ",queue)
+queue.append(11)
+print("Updated queue is: ",queue)
+queue.pop(0)
+print("Updated queue is: ",queue)
 
 #Optional
 list5=[1,2,3,4,5,6,7,8,9,10]
