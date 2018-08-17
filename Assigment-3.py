@@ -36,6 +36,71 @@ l1.sort()
 print("sorted merged list is: ",l1)
 
 #Question 6
+countEve=0
+countOdd=0
+for i in l1:
+    if(i%2==0):
+        countEve+=1
+    else:
+        countOdd+=1
+print("Odd count: " , countOdd)
+print("Even count: ",countEve)
+
+
+
+#TUPLES
+
+#Question 1
+li=[]
+n = int(input("Enter number of elements you want in tuple\n"))
+print("Enter integer elements")
+for i in range(n):
+    a=int(input())
+    li.append(a)
+tup=tuple(li)
+print("Tuple is : " , tup)
+rev=reversed(tup)
+print("Reversed tuple is : " , tuple(rev))
+
+#Question 2
+con=[]
+n = int(input("Enter number of elements you want in tuple\n"))
+print("Enter integer elements")
+for i in range(n):
+    a=int(input())
+    con.append(a)
+tupp=tuple(con)
+print("The largest and smallest elements are " , max(tupp) , " and " , min(tupp) , "respectively")
+
+
+
+#STRINGS
+
+#Question 1
+st=input("Enter a string\n")
+print(st.upper())
+
+#Question 2
+val=input("Enter a string\n")
+c=0;
+for i in range(len(val)):
+    if val.isdigit():
+       c=1;
+    else:
+        c=0;
+        break;
+if c==1:
+    print("True")
+else:
+    print("False")
+
+#Question 3
+stt="Hello World"
+print(stt)
+print(stt.replace("World","Prakriti"))
+
+
+#Optional
 #stack
 stack=["Prakriti","Abhanshu","Shubhi","Diksha"]
 print("Stack is: ",stack)
@@ -53,14 +118,4 @@ print("Updated queue is: ",queue)
 queue.pop(0)
 print("Updated queue is: ",queue)
 
-#Optional
-list5=[1,2,3,4,5,6,7,8,9,10]
-countEve=0
-countOdd=0
-for i in list5:
-    if(i%2==0):
-        countEve+=1
-    else:
-        countOdd+=1
-print("Odd count: " , countOdd)
-print("Even count: ",countEve)
+

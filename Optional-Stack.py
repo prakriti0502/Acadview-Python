@@ -1,4 +1,4 @@
-n=int(input("Enter number of elements in stack\n"))
+n=int(input("Enter number of elements in list\n"))
 l1=[]
 print("Enter elements")
 for i in range(n):
@@ -15,4 +15,5 @@ elif choice==2:
     print("Stack is ",l1)
     ad=int(input("Enter a new element"))
     l1.append(ad)
+    print("Stack after appending",ad,"is",l1)
     print("After popping " , l1.pop() , "\nStack is: " , l1)

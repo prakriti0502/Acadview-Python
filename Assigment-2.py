@@ -25,6 +25,7 @@ fees=5000
 print("Name: %s , Course: %s , Fees: %d" %(s,course,fees))
 
 #Question 6
-name="Tony Stark"
-salary=1000000
-print('%s"%d'%(name,salary) )
+radius=float(input("Enter radius of circle"))
+pi=3.14
+area=pi*(radius**2)
+print("Area of circle with radius " , radius , " is " , area)
