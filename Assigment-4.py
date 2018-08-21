@@ -19,10 +19,11 @@ print(str2)
 
 
 #Q.3- Split the user input on comma's and store the values in a list as integers.
-n=int(input("Enter number of inputs\n"))
+'''n=int(input("Enter number of inputs\n"))
 lis2=[int(input()) for i in range(n)]
-print(lis2)
-
+print(lis2)'''
+l=list(map(int,input().split(',')))    
+print(l)
 
 #Q.4- Check whether a string is palindromic or not.
 str3=input("Enter a string you wanna check\n")
